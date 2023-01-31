@@ -341,10 +341,6 @@ header {
         height: 160px;
         box-shadow: 6px 6px 6px rgba(0.16, 0.16, 0.16, 0.16);
     }
-
-    .cabecalho__john {
-        font-size: 150%;
-    }
     
     .cabecalho__instagram {
         font-size: 150%;
