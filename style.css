@@ -1,19 +1,19 @@
 /* header */
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-image: url("imgs/geometric_purple_back.jpg");
     background-size: 100%;
 }
 
 header {
     display: flex;
     justify-content: right;
-    background-image: -webkit-linear-gradient(#35a9fe, rgb(24, 114, 248)); 
     background-size: 100%;
     padding: 2% 5%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
     transition: 1s;
-    font-family: fantasy
+    font-family: fantasy;
+    box-shadow: 4px 4px 4px 0px rgba(0.16, 0.16, 0.16, 0.16);
+    justify-content: space-between;
 }
 
 
@@ -25,11 +25,14 @@ header {
     background: -webkit-linear-gradient(#fafafa, rgb(221, 221, 221));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-right: 90%;
+}
+
+.cabecalho__icons {
+    display: flex;
 }
 
 .cabecalho__instagram {
-    padding-right: 1%;
+    padding-right: 15%;
     font-size: 190%;
     transition: 1s;
     background: -webkit-linear-gradient(#fafafa, rgb(221, 221, 221));
@@ -53,85 +56,86 @@ header {
 .apresentacao{
     align-items: left;
     text-align: left;
-    padding: 6%;
-    background-image: url("imgs/blue_background.jpg");
     background-size: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 100%;
 }
 
+.apresentacao__container {
+    display: flex;
+    padding: 2%;
+}
+
+
 .apresentacao__titulo__div__cont{
+    padding-right: 20%;
     padding-top: 2%;
     padding-block-end: 2%;
 }
 
 .apresentacao__titulo__div {
-    background-image: -webkit-linear-gradient(#35a9fe, rgb(24, 114, 248));
+    background-image: -webkit-linear-gradient(#fafafa, rgb(221, 221, 221));
     color: -webkit-linear-gradient(#35a9fe, rgb(24, 114, 248));;
-    width: 290px;
+    width: 100%;
     height: 2px;
 }
 
-
-
 .apresentacao__titulo {
-    background: -webkit-linear-gradient(#35a9fe, rgb(24, 114, 248));
+    background: -webkit-linear-gradient(#fafafa, rgb(221, 221, 221));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 220%;
+    font-size: 300%;
+    padding-top: 6%;
 }
 
 .apresentacao_texto {
-    padding-right: 2%;
-    font-size: 160%;
-    background: -webkit-linear-gradient(#35a9fe, rgb(24, 114, 248));
+    font-size: 170%;
+    background: -webkit-linear-gradient(#fafafa, rgb(221, 221, 221));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .apresentacao__button_container{
-    padding-top: 3%;
+    padding-top: 4%;
     align-items: left;
-    text-align: left;
-    padding-left: 6.6%;
+    text-align: center;
 }
 
 .aprentacao__botao {
-    background: #35a9fe;
+    background-image: -webkit-linear-gradient(#35a9fe, rgb(24, 114, 248));
+    background-size: 145%;
     color: white;
     font: inherit;
-    border: 100% solid #2b6ba7;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px rgba(0.16, 0.16, 0.16, 0.11);
     cursor: pointer;
-    font-size: 80%;
-    padding: 1.3%;
-    padding-left: 2.1%;
-    padding-right: 2.1%;
-    transition: 0.2s;
+    font-size: 90%;
+    padding: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.5s;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
   }
   
   .aprentacao__botao:hover{
     text-decoration: underline;
-    background: #1f84cc;
   }
 
 
 .servico {
     text-align: center;
-    padding-top: 2%;
 }
 
 .servicos {
-    background-color: rgb(255, 255, 255);
-    padding: 2%;
-    padding-top: 2%;
-    padding-block-end: 5%;
+    padding: 1%;
+    padding-block-end: 3%;
 }
 
 .servicos li {
@@ -145,6 +149,11 @@ header {
     box-shadow: 4px 4px 4px 4px rgba(0.16, 0.16, 0.16, 0.16);
     border-radius: 15px
 }
+
+.servicos li:hover {
+    box-shadow: 6px 6px 6px 6px rgba(0.16, 0.16, 0.16, 0.16);
+}
+
 
 .servicos li img {
     width: 20%;
@@ -190,9 +199,68 @@ header {
     font-family: 'Poppins', sans-serif;
   }
 
-  .servicos__botao:hover {
+.servicos__botao:hover {
     text-decoration: underline;
   }
+
+.about_me {
+    background-color: white;
+    padding-left: 6%;
+    padding-right: 6%;
+    box-shadow: 6px 6px 6px rgba(0.16, 0.16, 0.16, 0.16);
+}
+
+.about_me__conteudo {
+    display: flex;
+}
+
+.about_me__image_container {
+    padding: 6%;
+}
+
+.about_me__image {
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0.16, 0.16, 0.16, 0.16);
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.about_me__titulo {
+    font-size: 160%;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    padding-top: 3%;
+    padding-block-end: 3%;
+    font-weight: 600;
+}
+
+.about_me__text {
+    font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+    color: #262529;
+    line-height: 110%;
+    padding: 6%;
+
+}
+.certificados {
+    background-color: white;
+    align-items: center;
+    text-align: left;
+    display: flex;
+}
+
+.certificados div {
+    padding-top: 15%;
+}
+
+.certificados img {
+    width: 30%;
+    box-shadow: 6px 6px 6px 6px rgba(0.16, 0.16, 0.16, 0.16);
+}
+
+.certificados img:hover {
+    box-shadow: 8px 8px 8px 8px rgba(0.16, 0.16, 0.16, 0.16);
+}
 
 /* main */
 
@@ -224,11 +292,156 @@ header {
     box-sizing: border-box;
     text-align: left;
   }
-  .copy {
+.copy {
     background-color: #212529;
     color: white;
     margin-top: auto;
-    padding: 4%;
-  }
+    text-align: center;
+}
+
+.copy__copy {
+    padding-top: 5%;
+    padding-block-end: 2%;
+}
+
+.pe__icons {
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.pe__icons p {
+    padding-left: 1%;
+}
 
 /* footer */
+
+/*MOBILE ADAPTERS*/
+
+@media screen and (max-width:600px) { 
+    .apresentacao__titulo {
+        font-size: 190%;
+    }
+
+    .apresentacao__titulo__div {
+        width: 100%;
+    }
+
+    .apresentacao_texto {
+        font-size: 100%;
+    }
+
+    .apresentacao__john_image__container {
+        padding: 0%;
+    }
+
+    .apresentacao__john_image {
+        height: 160px;
+        height: 160px;
+        box-shadow: 6px 6px 6px rgba(0.16, 0.16, 0.16, 0.16);
+    }
+
+    .cabecalho__john {
+        font-size: 150%;
+    }
+    
+    .cabecalho__instagram {
+        font-size: 150%;
+        
+    }
+    
+    .cabecalho__linkedin {
+        font-size: 150%;
+    }
+
+    .servico {
+        text-align: center;
+        padding-top: 2%;
+    }
+    
+    .servicos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    
+
+    .servicos li {
+        width: 95%;
+        margin: 1.5% 1.5%;
+        padding: 2%;
+        
+        box-sizing: border-box;
+        box-shadow: 4px 4px 4px 4px rgba(0.16, 0.16, 0.16, 0.16);
+        border-radius: 15px
+    }
+    
+    .servicos li img {
+        width: 20%;
+        padding-top: 1%;
+    }
+    
+    .servicos h2 {
+        padding-top: 1%;
+        font-size: 90%;
+    }
+    
+    .servico__text {
+        font-size: 70%;
+        line-height: 15px;
+    }
+    
+    .servicos__button_container{
+        padding-top: 0.5%;
+    }
+    
+    .servicos__botao {
+        background-image: -webkit-linear-gradient(#35a9fe, rgb(24, 114, 248));
+        background-size: 145%;
+        color: white;
+        font: inherit;
+        border-radius: 3px;
+        box-shadow: 0px 4px 4px rgba(0.16, 0.16, 0.16, 0.11);
+        cursor: pointer;
+        font-size: 50%;
+        padding: 2.6%;
+        padding-left: 5%;
+        padding-right: 5%;
+        transition: 0.5s;
+        font-family: 'Poppins', sans-serif;
+      }
+    
+      .servicos__botao:hover {
+        text-decoration: underline;
+      }
+
+      .copy{
+        font-size: 70%;
+      }
+
+      .about_me {
+        background-color: white;
+        padding-left: 6%;
+        padding-right: 6%;
+        box-shadow: 6px 6px 6px rgba(0.16, 0.16, 0.16, 0.16);
+    }
+    
+    .about_me__conteudo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    
+    .about_me__image {
+        width: 80%;
+    }
+    
+    .certificados img {
+        width: 100%;
+        box-shadow: 6px 6px 6px 6px rgba(0.16, 0.16, 0.16, 0.16);
+    }
+    
+
+} 
