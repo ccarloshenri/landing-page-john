@@ -16,19 +16,17 @@ header {
     justify-content: space-between;
 }
 
+.john__button {
+    width: 10%;
+}
 
-.cabecalho__john {
-    text-transform: uppercase;
-    font-size: 200%;
-    transition: 1s;
-    text-align: center;
-    background: -webkit-linear-gradient(#fafafa, rgb(221, 221, 221));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.john__logo {
+    width: 100%;
 }
 
 .cabecalho__icons {
     display: flex;
+    align-items: center;
 }
 
 .cabecalho__instagram {
@@ -342,9 +340,14 @@ header {
         box-shadow: 6px 6px 6px rgba(0.16, 0.16, 0.16, 0.16);
     }
 
-    .cabecalho__john {
-        font-size: 150%;
+    .john__button {
+        width: 30%;
     }
+    
+    .john__logo {
+        width: 100%;
+    }
+    
     
     .cabecalho__instagram {
         font-size: 150%;
